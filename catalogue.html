@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - Amira L'Égyptienne</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Amira L'Égyptienne 🌸</div>
+        <nav>
+            <a href="/">Accueil</a>
+            <a href="/catalogue">Catalogue</a>
+            <a href="/authentique">Authentiques</a>
+            <a href="/fake">Fakes</a>
+            <a href="/commander" class="btn-commander">Commander</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Notre catalogue 📦</h1>
+        <p>Le meilleur de la K-Beauty (Corée du Sud) 100% authentique</p>
+    </section>
+
+    <!-- ===== MARQUE 1 : MEDICUBE ===== -->
+    <section class="marque-section">
+        <h2 class="titre-marque">🇰🇷 MEDICUBE (Corée du Sud)</h2>
+        <div class="grille-produits">
+            
+            <div class="produit">
+                <img src="{{ url_for('static', filename='images/produit_01.jpg') }}" alt="Medicube" class="produit-image">
+                <div class="produit-infos">
+                    <h3 class="produit-nom">Zero Pore Pad 2.0</h3>
+                    <p class="produit-prix">65 000 FCFA</p>
+                </div>
+            </div>
+
+            <div class="produit">
+                <img src="{{ url_for('static', filename='images/produit_02.jpg') }}" alt="Medicube" class="produit-image">
+                <div class="produit-infos">
+                    <h3 class="produit-nom">Red Foam Cleanser</h3>
+                    <p class="produit-prix">55 000 FCFA</p>
+                </div>
+            </div>
+
+            <div class="produit">
+                <img src="{{ url_for('static', filename='images/produit_03.jpg') }}" alt="Medicube" class="produit-image">
+                <div class="produit-infos">
+                    <h3 class="produit-nom">Collagen Jelly Cream</h3>
+                    <p class="produit-prix">85 000 FCFA</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== MARQUE 2 : COSRX ===== -->
+    <section class="marque-section">
+        <h2 class="titre-marque">🇰🇷 COSRX (Corée du Sud)</h2>
+        <div class="grille-produits">
+            
+            <div class="produit">
+                <img src="{{ url_for('static', filename='images/produit_04.jpg') }}" alt="COSRX" class="produit-image">
+                <div class="produit-infos">
+                    <h3 class="produit-nom">Snail 96 Mucin Essence</h3>
+                    <p class="produit-prix">95 000 FCFA</p>
+                </div>
+            </div>
+
+            <div class="produit">
+                <img src="{{ url_for('static', filename='images/produit_05.jpg') }}" alt="COSRX" class="produit-image">
+                <div class="produit-infos">
+                    <h3 class="produit-nom">Low pH Good Morning Cleanser</h3>
+                    <p class="produit-prix">70 000 FCFA</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== MARQUE 3 : BEAUTY OF JOSEON ===== -->
+    <section class="marque-section">
+        <h2 class="titre-marque">🇰🇷 BEAUTY OF JOSEON (Corée du Sud)</h2>
+        <div class="grille-produits">
+            
+            <div class="produit">
+                <img src="{{ url_for('static', filename='images/produit_06.jpg') }}" alt="Beauty of Joseon" class="produit-image">
+                <div class="produit-infos">
+                    <h3 class="produit-nom">Relief Sun SPF50</h3>
+                    <p class="produit-prix">85 000 FCFA</p>
+                </div>
+            </div>
+
+            <div class="produit">
+                <img src="{{ url_for('static', filename='images/produit_07.jpg') }}" alt="Beauty of Joseon" class="produit-image">
+                <div class="produit-infos">
+                    <h3 class="produit-nom">Glow Deep Serum</h3>
+                    <p class="produit-prix">90 000 FCFA</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== MARQUE 4 : ANUA ===== -->
+    <section class="marque-section">
+        <h2 class="titre-marque">🇰🇷 ANUA (Corée du Sud)</h2>
+        <div class="grille-produits">
+            
+            <div class="produit">
+                <img src="{{ url_for('static', filename='images/produit_08.jpg') }}" alt="Anua" class="produit-image">
+                <div class="produit-infos">
+                    <h3 class="produit-nom">Heartleaf 77% Toner</h3>
+                    <p class="produit-prix">85 000 FCFA</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Amira L'Égyptienne — Bamako, Mali</p>
+    </footer>
+
+</body>
+</html>

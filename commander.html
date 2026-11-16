@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Commander - Amira</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">Amira L'Égyptienne 🌸</div>
+        <nav>
+            <a href="/">Accueil</a>
+            <a href="/catalogue">Catalogue</a>
+            <a href="/authentique">Authentiques</a>
+            <a href="/fake">Fakes</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Passer une commande</h1>
+        <p>Remplis le formulaire, on t'appellera pour confirmer. 📞</p>
+    </section>
+
+    <form action="/commander" method="POST" class="formulaire" style="max-width: 500px; margin: 40px auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <label style="display:block; margin-bottom:5px; font-weight:bold; color:#8B4513;">Nom complet :</label>
+        <input type="text" name="nom" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;">
+
+        <label style="display:block; margin-bottom:5px; font-weight:bold; color:#8B4513;">Téléphone :</label>
+        <input type="tel" name="telephone" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;">
+
+        <label style="display:block; margin-bottom:5px; font-weight:bold; color:#8B4513;">Adresse :</label>
+        <input type="text" name="adresse" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;">
+
+        <label style="display:block; margin-bottom:5px; font-weight:bold; color:#8B4513;">Produit souhaité :</label>
+        <input type="text" name="produit" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;">
+
+        <label style="display:block; margin-bottom:5px; font-weight:bold; color:#8B4513;">Moyen de paiement :</label>
+        <select name="paiement" required style="width:100%; padding:10px; margin-bottom:20px; border:1px solid #ccc; border-radius:5px;">
+            <option value="Orange Money">Orange Money</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Wave">Wave</option>
+        </select>
+
+        <button type="submit" class="btn-principal" style="width:100%; cursor:pointer;">Valider ma commande</button>
+    </form>
+    <footer><p>© 2025 Amira L'Égyptienne — Bamako, Mali</p></footer>
+</body>
+</html>

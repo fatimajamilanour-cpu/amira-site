@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #FFF8F3;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #D4A574, #B87333);
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+.btn-commander {
+    background: white;
+    color: #8B4513 !important;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #FFF0E6, #FFE4D6);
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: #8B4513;
+}
+
+.hero p {
+    font-size: 17px;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+.btn-principal {
+    display: inline-block;
+    background: #D4A574;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    background: #B87333;
+}
+
+.marque-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titre-marque {
+    font-size: 26px;
+    color: #8B4513;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #D4A574;
+}
+
+.grille-produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produit {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.produit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.produit-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: #FFF0E6;
+}
+
+.produit-infos {
+    padding: 12px;
+}
+
+.produit-nom {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 6px;
+    min-height: 38px;
+}
+
+.produit-prix {
+    font-size: 16px;
+    font-weight: bold;
+    color: #8B4513;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    header { padding: 15px; text-align: center; }
+    nav a { margin-left: 10px; font-size: 14px; }
+    .hero h1 { font-size: 26px; }
+    .grille-produits { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .produit-image { height: 140px; }
+    .produit-nom { font-size: 12px; min-height: 32px; }
+    .produit-prix { font-size: 14px; }
+}

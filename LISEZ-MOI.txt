@@ -1,0 +1,27 @@
+=========================================
+SITE AMIRA L'ÉGYPTIENNE - GUIDE D'INSTALLATION
+=========================================
+
+Pour lancer ce site sur votre ordinateur (Windows) :
+
+1. Installer Python :
+   - Téléchargez Python sur python.org
+   - TRÈS IMPORTANT : Cochez la case "Add Python to PATH" lors de l'installation.
+
+2. Ouvrir le terminal :
+   - Appuyez sur Windows + R, tapez "cmd" et appuyez sur Entrée.
+
+3. Aller dans le dossier :
+   - Tapez : cd chemin/vers/le/dossier/amira-site (ou faites glisser le dossier dans le cmd).
+
+4. Installer les dépendances :
+   - Tapez : pip install -r requirements.txt
+
+5. Lancer le serveur :
+   - Tapez : python app.py
+
+6. Ouvrir le site :
+   - Ouvrez votre navigateur web (Chrome, Edge...)
+   - Tapez l'adresse : http://127.0.0.1:5000
+
+Le site est maintenant en ligne sur votre machine !
